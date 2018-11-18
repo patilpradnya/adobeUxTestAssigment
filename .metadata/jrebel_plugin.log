@@ -1,0 +1,26 @@
+2018-07-22 11:17:09.594 [Worker-4] DEBUG AgentProvider - setInitializationData. isBeta false; location jrebel/
+2018-07-22 11:17:09.763 [Worker-4] DEBUG AgentProvider - setInitializationData. isBeta true; location jr6/jrebel/
+2018-07-22 11:17:09.945 [Worker-4] DEBUG HttpNotifications - Starting JRebel Notification server on port 0
+2018-07-22 11:17:10.119 [Worker-4] DEBUG HttpNotifications - Listening to JRebel notifications at http://127.0.0.1:49946/jrebel/notifications
+2018-07-22 11:17:10.129 [Worker-4] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2018-07-22 11:17:10.138 [Worker-4] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\darulselvan\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, C:\eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.6.2.RELEASE-201408260808\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, , ]...
+2018-07-22 11:17:10.145 [Worker-4] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@41cd77e9
+2018-07-22 11:17:10.444 [Worker-4] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@41cd77e9 stopped with exit code 0
+2018-07-22 11:17:10.447 [JRebel License Expiration Notification Checker] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2018-07-22 11:17:10.448 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\darulselvan\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, C:\eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.6.2.RELEASE-201408260808\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, , ]...
+2018-07-22 11:17:10.449 [Worker-4] DEBUG EclipseJRebelClientAdapter - Getting license via CLI
+2018-07-22 11:17:10.449 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@5869cac4
+2018-07-22 11:17:10.450 [Thread-29] DEBUG o.z.exec.ProcessExecutor - Executing [C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.exe, -Drebel.log=false, -Drebel.log.stdout=false, -Drebel.env.ide=Eclipse, -Drebel.properties=C:\Users\darulselvan\.jrebel\jrebel.properties, -Drebel.license_server.legacy=false, -cp, C:\eclipse\plugins\org.zeroturnaround.eclipse.embedder_5.6.2.RELEASE-201408260808\jrebel\jrebel.jar, com.zeroturnaround.javarebel.CLILicensingAPIImpl, getCurrentLicense, , ]...
+2018-07-22 11:17:10.452 [Thread-29] DEBUG o.z.exec.ProcessExecutor - Started java.lang.ProcessImpl@49a51215
+2018-07-22 11:17:10.806 [Thread-29] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@49a51215 stopped with exit code 0
+2018-07-22 11:17:10.815 [JRebel License Expiration Notification Checker] DEBUG o.z.exec.WaitForProcess - java.lang.ProcessImpl@5869cac4 stopped with exit code 0
+2018-07-22 11:17:10.820 [JRebel License Expiration Notification Checker] ERROR RebelPlugin - Got Exception: C:\Users\darulselvan\.jrebel\licensecheckhistory (Access is denied)
+java.io.FileNotFoundException: C:\Users\darulselvan\.jrebel\licensecheckhistory (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method) ~[na:1.8.0_111]
+	at java.io.FileOutputStream.open(FileOutputStream.java:270) ~[na:1.8.0_111]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213) ~[na:1.8.0_111]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162) ~[na:1.8.0_111]
+	at org.zeroturnaround.eclipse.notifications.AbstractDailyWatcher.writePopupHistory(AbstractDailyWatcher.java:82) [org.zeroturnaround.eclipse_5.6.2.RELEASE-201408260808.jar:na]
+	at org.zeroturnaround.eclipse.notifications.LicenseWatcher.popupNotificationIfRequired(LicenseWatcher.java:33) [org.zeroturnaround.eclipse_5.6.2.RELEASE-201408260808.jar:na]
+	at org.zeroturnaround.eclipse.notifications.AbstractDailyWatcher.run(AbstractDailyWatcher.java:27) [org.zeroturnaround.eclipse_5.6.2.RELEASE-201408260808.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
