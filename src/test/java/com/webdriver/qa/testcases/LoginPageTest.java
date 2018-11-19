@@ -23,7 +23,7 @@ public class LoginPageTest extends TestBase {
 	public Object[][] provideInvalidLogins()
 	{
 		return new Object[][] { {"foo@gmail.com","bar123","Invalid email or password, or your account may be locked."}, // non-existing/unregistered user
-								{"foo@bar.com","bar","Invalid email or password, or your account may be locked."} // invalid email id
+								{"foo@bar.com","bar","Invalid email or password, or your account may be locked."} // invalid email id (non-existing domain)
 								};
 	}
 	

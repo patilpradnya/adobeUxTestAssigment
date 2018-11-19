@@ -4,6 +4,9 @@ import com.webdriver.qa.util.Timeouts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static org.testng.Assert.*;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -38,6 +41,10 @@ public class TestBase {
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
             driver = new ChromeDriver();
 
+        }
+        else
+        {
+        	fail("This test only supports Chrome driver so far. Please make sure you have diver=chrome in the config.properties file. ");
         }
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(Timeouts.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
